@@ -2,7 +2,7 @@
 
 return {
   header = function(text, level)
-    return ("#"):rep(level) .. text
+    return ("#"):rep(level) .. " " .. text
   end,
   bold = function(text)
     return "**" .. text .. "**"

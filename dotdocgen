@@ -3,6 +3,10 @@
 @header { .docgen }
   .docgen is a simple, powerful, and easily extensible documentation generator written completely in Lua.
 
+  Directives are defined in the @monospace { directives/ } directory.  Each file must return a function that, when called with @monospace { text }, @monospace { renderer }, and @monospace { commentprefix } as its arguments shall transform the `text` in some way and return it.  See the existing directives for details.
+
+  Renderers must support at a bare minimum everything supported by the markdown renderer.  See @monospace { output/markdown.lua } for what it provides.
+
 @header3 { Usage }
   @monospace { dotdocgen [OPTIONS] FILE [...] DESTINATION }
 

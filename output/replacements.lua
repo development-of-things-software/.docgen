@@ -1,5 +1,5 @@
 return {
   at = "@",
   rcb = "}",
-  lcb = "{"
+  lcb = "{",
 }

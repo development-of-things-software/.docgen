@@ -73,15 +73,20 @@ process_directive = function(name, arguments)
     :gsub(directive_pattern, process_directive)
 end
 
+local write = ""
 for i=1, #args - 1, 1 do
   local handle = assert(io.open(args[i], "r"))
   local data = handle:read("a")
-  local write = ""
   for outer, data in data:gmatch(directive_pattern) do
     write = write .. process_directive(outer, data)
   end
-  write = write:gsub("&([^;]+);", replacements)
-  out:write(write)
 end
 
+write = write:gsub("&([^;]+);", replacements)
+
+if output.postprocess then
+  write = output.postprocess(write)
+end
+
+out:write(write)
 out:close()

@@ -16,7 +16,8 @@
   @bold { --comment } PREFIX
     The prefix to all comment lines.
 
-Directive syntax: @monospace { &at;DIRECTIVE &lcb; DATA &rcb; }
+@header3 { Directive Syntax }
+  @monospace { &at;DIRECTIVE &lcb; DATA &rcb; }
 } --]]
 
 local VERSION = ".docgen 0.1.0"

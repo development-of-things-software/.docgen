@@ -30,7 +30,9 @@
 
 
 
-Directive syntax: `@DIRECTIVE { DATA }`
+### Directive Syntax
+
+ `@DIRECTIVE { DATA }`
 
 
 

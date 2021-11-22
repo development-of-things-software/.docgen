@@ -2,6 +2,8 @@
 
 A simple, extensible, documentation generation utility.  Scrapes documentation from source code comments using a specific syntax.  Supports pluggable output formats, for example to render to Markdown or HTML.
 
+.docgen will attempt to guess the comment prefix it should use from the file extension.  If its guess is incorrect, or if it cannot guess, you may specify the prefix to use with the "--language" option
+
 Examples:
   
 To scrape documentation from example.lua into docs.md:
@@ -11,5 +13,3 @@ To scrape documentation from example.lua into docs.md:
 To scrape documentation from several files into docs.html:
   
   dotdocgen --format html $(find example/ -type f) docs.md
-
-.docgen will try to guess the comment prefix it should use from the file extension, but sometimes this will not work.  You can manually pass the --comment option to tell .docgen where to look for comments.

@@ -1,4 +1,36 @@
-                                                                   
+#.docgen
+
+.docgenisasimple,powerful,andeasilyextensibledocumentationgeneratorwrittencompletelyinLua.
+
+
+
+###Usage
+
+`dotdocgen[OPTIONS]FILE[...]DESTINATION`
+
+
+
+###Command-LineOptions
+
+**--format**FORMAT
+
+Tells.docgentousethespecifiedformat.
+
+
+
+**--version**
+
+Printtheversionof.docgen,andexit.
+
+
+
+**--comment**PREFIX
+
+Theprefixtoallcommentlines.
+
+
+
+Directivesyntax:`@DIRECTIVE{DATA}`
 
 
 

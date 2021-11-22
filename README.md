@@ -1,4 +1,36 @@
-# .docgen<br>	.docgen is a simple, powerful, and easily extensible documentation generator written completely in Lua.<br><br>### Usage<br>	`dotdocgen [OPTIONS] FILE [...] DESTINATION`<br><br>### Command-Line Options<br>	**--format** FORMAT<br>		Tells .docgen to use the specified format.<br><br>	**--version**<br>		Print the version of .docgen, and exit.<br><br>	**--comment** PREFIX<br>		The prefix to all comment lines.<br><br>Directive syntax: `@DIRECTIVE { DATA }`
+# .docgen
+
+	.docgen is a simple, powerful, and easily extensible documentation generator written completely in Lua.
+
+
+
+### Usage
+
+	`dotdocgen [OPTIONS] FILE [...] DESTINATION`
+
+
+
+### Command-Line Options
+
+	**--format** FORMAT
+
+		Tells .docgen to use the specified format.
+
+
+
+	**--version**
+
+		Print the version of .docgen, and exit.
+
+
+
+	**--comment** PREFIX
+
+		The prefix to all comment lines.
+
+
+
+Directive syntax: `@DIRECTIVE { DATA }`
 
 
 
